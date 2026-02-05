@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Python / editors (optional safety)
+*.pyc
+__pycache__/
+.vscode/
+.idea/
+
+# n8n environment & secrets
+n8n-data/.env
+n8n-data/.env.local
+n8n-data/.n8n/
+.env
+.env.local
+
+# Logs and outputs
+logs/
+*.log
+
+# Workflow instances / backups (optional)
+workflow.json
+backups/
