@@ -12,9 +12,9 @@ For instant fixes, see `QUICK_REFERENCE.md`.
 You're building a workflow automation that:
 
 - Runs every 5 hours automatically.
-- Searches 7 queries across Canada (Toronto) and India (Hyderabad, Bengaluru).
+- Searches queries across Canada (Toronto) and India (Hyderabad, Bengaluru).
 - Fetches 3 jobs per search from Adzuna API (21 total per run).
-- Filters for Java/C++ backend roles only.
+- Filters for Java/C++/Python backend roles only.
 - Deduplicates against previous runs (30-day memory).
 - Appends to a CSV file on your Mac.
 
