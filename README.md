@@ -1,8 +1,3 @@
-## 1. Minimal README to copy (short, complete)
-
-Use this trimmed version as your actual `README.md` (it has all core steps, but no giant embedded JSON):
-
-```markdown
 # Automated Job Search Pipeline - Complete Setup Guide
 
 > Budget 45–60 minutes for first-time setup.
