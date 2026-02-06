@@ -41,7 +41,7 @@
 
 ```
 8 AM: Workflow 1 → Email "Today's 3 problems: Sliding Window (Medium)"
-You solve 2/3 → set Status = "In Progress" on #3 (Sheets app on phone)
+You solve 2/3 → set Status = "In Progress" on #3
 
 Evening: Workflow 2 → Claude tutors #3 → appends HTML review to Notes
 You solve it → Status = "Completed"
