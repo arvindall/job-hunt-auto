@@ -10,6 +10,7 @@ Lessons learned from building + troubleshooting.
 ## 1) LeetCode GraphQL Foundation (Problem Statements)
 
 **Why**: Claude tutoring needs full context → store `Problem Description` back in sheet (no live scraping)?
+
 **Cloudflare blocks**: 403 "Enable JS/cookies" → slow down, retry, VPN. [web:612]
 
 ### Endpoint
