@@ -9,7 +9,9 @@ Lessons learned from building + troubleshooting.
 
 ## 1) LeetCode GraphQL Foundation (Problem Statements)
 
-**Why**: Claude tutoring needs full context → store `Statement` in sheet (no live scraping).
+**Why**: Claude tutoring needs full context → store `Problem Description` back in sheet (no live scraping)?
+
+**Cloudflare blocks**: 403 "Enable JS/cookies" → slow down, retry, VPN. [web:612]
 
 ### Endpoint
 - `https://leetcode.com/graphql` [web:406]
@@ -18,17 +20,15 @@ Lessons learned from building + troubleshooting.
 ### Setup Script (`fetch_leetcode_descriptions.py`)
 ```python
 # Parses LeetCode_Link → titleSlug ("two-sum")
-# GraphQL POST → clean HTML → write to Sheet `Statement` column
+# GraphQL POST → clean HTML → write to Sheet `Problem_Description` column
 # Rate limit: 1 req/sec (Cloudflare protection)
 ```
-
-**Cloudflare blocks**: 403 "Enable JS/cookies" → slow down, retry, VPN. [web:612]
 
 ---
 
 ## 2) Google Sheet schema and design choices
 
-### Why store `Statement` in the sheet?
+### Why store `Problem Description` in the sheet?
 - Workflow 2 becomes “no scraping, reliable”: Claude always gets full context.
 - You can run tutoring offline from LeetCode availability (assuming the sheet is filled).
 
